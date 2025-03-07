@@ -7,14 +7,17 @@ To test the algorithm's performance, a synthetic audio signal with realistic har
 
 ### The audio signal (A4)
 A slightly messy signal which mimics how octave multiples of the fundamental frequency are present in stringed music signals.
+
 ![image](https://github.com/user-attachments/assets/e014a7b3-4ada-479f-8135-2d5ae2b8436c)
 
 ### Autocorrelation
 The bread and butter of the algorithm, comparing the signal to a shifted version of itself and returning the similarity between the shifted and original for some range of possible shifts.
+
 ![image](https://github.com/user-attachments/assets/324312fc-7a36-4919-926f-79892611c7dc)
 
 ### Difference function, CMNDF
 Some modifications done onto the autocorrelation curve to prevent picking the zero-lag peak.
+
 ![image](https://github.com/user-attachments/assets/0a04355d-fb6f-4d9b-8d5c-1ff9f59f07e3)
 
 The final pitch is chosen as the first trough (peak) below a certain threshold.
